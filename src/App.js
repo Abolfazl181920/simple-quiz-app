@@ -29,10 +29,9 @@ const App = () => {
         <div className="BodySection">
           <div className="Question">{questions[0].questionText}</div>
           <div className="Button">
-            <input type='button' value='Tehran' />
-            <input type='button' value='Tokyo' />
-            <input type='button' value='Istanbul' />
-            <input type='button' value='nothing' />
+            {questions[0].answerOptions.map((answerOption) => {
+              return <button>{answerOption.answerText}</button>
+            })}
           </div>
         </div>
     </div>

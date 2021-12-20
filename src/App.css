@@ -32,7 +32,7 @@
 }
 
 /* answer buttons */
-input {
+Button {
     height: 10vh;
     width: 15%;
     position: relative;
@@ -43,6 +43,6 @@ input {
     transition: .3s;
 }
 
-input:hover {
+Button:hover {
     background-color: var(--bluehover);
 }
