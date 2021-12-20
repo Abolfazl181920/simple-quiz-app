@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 
 const App = () => {
@@ -22,33 +22,12 @@ const App = () => {
 				{ answerText: 'Tony Stark', isCorrect: false },
 			],
 		},
-		{
-			questionText: 'The iPhone was created by which company?',
-			answerOptions: [
-				{ answerText: 'Apple', isCorrect: true },
-				{ answerText: 'Intel', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Microsoft', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'How many Harry Potter books are there?',
-			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
-			],
-		},
 	];
-
-
-  const [] = useState();
 
   return (
     <div className="App">
         <div className="BodySection">
-          <div className="Question">What is the capital of Germany?</div>
+          <div className="Question">{questions[0].questionText}</div>
           <div className="Button">
             <input type='button' value='Tehran' />
             <input type='button' value='Tokyo' />
