@@ -5,8 +5,8 @@ const App = () => {
 
   return (
     <div className="App">
-        <div className="bg-indigo-600 h-screen w-full">
-          <div>What is the capital of Germany?</div>
+        <div className="BodySection">
+          <div className="Question">What is the capital of Germany?</div>
           <div>
             <input type='button' value='Tehran' />
             <input type='button' value='Tokyo' />
