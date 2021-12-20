@@ -7,7 +7,7 @@ const App = () => {
     <div className="App">
         <div className="BodySection">
           <div className="Question">What is the capital of Germany?</div>
-          <div>
+          <div className="Button">
             <input type='button' value='Tehran' />
             <input type='button' value='Tokyo' />
             <input type='button' value='Istanbul' />

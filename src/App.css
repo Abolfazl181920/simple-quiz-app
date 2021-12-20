@@ -7,6 +7,7 @@
 :root {
     --white: #fff;
     --blue: rgb(103, 59, 226);
+    --bluehover: rgb(218, 217, 223);
 }
 
 /* body of app */
@@ -21,6 +22,27 @@
     color: var(--white);
     position: absolute;
     top: 38%;
-    left: 20%;
+    left: 25%;
     font-size: 3rem;
+}
+
+.Button {
+    display: flex;
+    justify-content: center;
+}
+
+/* answer buttons */
+input {
+    height: 10vh;
+    width: 15%;
+    position: relative;
+    top: 70vh;
+    cursor: pointer;
+    appearance: none;
+    border-style: none;
+    transition: .3s;
+}
+
+input:hover {
+    background-color: var(--bluehover);
 }
