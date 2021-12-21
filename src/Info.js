@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import InfoBody from './InfoBody';
 
 const Info = () => {
 
