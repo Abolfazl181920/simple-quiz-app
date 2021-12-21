@@ -30,7 +30,9 @@ const App = () => {
   return (
     <div className="App">
 		{
-			showScore ? <div className="ShowScore"></div> : (
+			showScore ? <div className="ShowScore">
+				<div className="ShowScoreBody"></div>
+			</div> : (
 				<div className="BodySection">
           			<div className="Question">{questions[0].questionText}</div>
           			<div className="Button">

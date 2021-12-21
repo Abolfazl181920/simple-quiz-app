@@ -8,7 +8,7 @@
     --white: #fff;
     --blue: rgb(103, 59, 226);
     --bluehover: rgb(218, 217, 223);
-    --green: rgb(94, 197, 80);
+    --green: rgb(209, 214, 208);
 }
 
 /* body of app */
@@ -53,4 +53,22 @@ Button:hover {
     height: 100vh;
     width: 100%;
     background-color: var(--green);
+}
+
+/* body of show score */
+.ShowScoreBody {
+    height: 20vh;
+    width: 50%;
+    background-color: var(--white);
+    border-radius: .3rem;
+    position: absolute;
+    top: 35%;
+    left: 22%;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
 }
