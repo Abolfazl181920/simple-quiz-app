@@ -24,9 +24,15 @@ const App = () => {
 		},
 	];
 
-	const [showScore, setShowScore] = useState(true);
+	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
 
+	const handleOptionClick = (isCorrect) => {
+		if (isCorrect) {
+			setScore(score + 1);
+			alert(score);
+		}
+	}
 
   return (
     <div className="App">
@@ -38,7 +44,7 @@ const App = () => {
           			<div className="Question">{questions[0].questionText}</div>
           			<div className="Button">
             			{questions[0].answerOptions.map((answerOption) => {
-              			return <button>{answerOption.answerText}</button>
+              			return <button onClick={() => handleOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
             		})}
           		</div>
         	</div>
