@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
 const App = () => {
@@ -24,8 +24,12 @@ const App = () => {
 		},
 	];
 
+	const [showScore, setShowScore] = useState(true);
+
+
   return (
     <div className="App">
+		{showScore ? <div className="ShowScore"></div> : null}
         <div className="BodySection">
           <div className="Question">{questions[0].questionText}</div>
           <div className="Button">
