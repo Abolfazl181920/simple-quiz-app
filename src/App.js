@@ -51,7 +51,7 @@ const App = () => {
 		},
 	];
 
-	const [showScore, setShowScore] = useState(false);
+	const [showScore, setShowScore] = useState(true);
 	const [score, setScore] = useState(0);
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 

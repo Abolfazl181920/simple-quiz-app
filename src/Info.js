@@ -8,7 +8,7 @@ const Info = () => {
 
     return(
         <Fragment>
-            <button onClick={showMoreInfo}>More Info</button>
+            <button className="MoreInfo" onClick={showMoreInfo}>More Info</button>
         </Fragment>
     );
 }

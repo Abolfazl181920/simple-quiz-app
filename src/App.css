@@ -81,7 +81,8 @@ Button:hover {
 }
 
 /* show questions again button */
-.BackToQuestions {
+/* show more info about quiz button */
+.BackToQuestions, .MoreInfo {
     position: absolute;
     left: 40%;
     border-radius: .3rem;
@@ -93,4 +94,14 @@ Button:hover {
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
   0 100px 80px rgba(0, 0, 0, 0.12);
   font-weight: 700;
+}
+
+.MoreInfo {
+    margin-top: 5rem;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.MoreInfo:hover {
+    background-color: var(--blue);
 }
