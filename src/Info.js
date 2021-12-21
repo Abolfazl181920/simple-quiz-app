@@ -1,15 +1,20 @@
-import React, {Fragment} from 'react';
+import React, {useState, Fragment} from 'react';
 import InfoBody from './InfoBody';
 
 const Info = () => {
 
-    const showMoreInfo = () => {
+    const [moreInfo, showMoreInfo] = useState(true);
+
+    const handleShowMoreInfo = () => {
         alert();
     }
 
     return(
         <Fragment>
-            <button className="MoreInfo" onClick={showMoreInfo}>More Info</button>
+            <button className="MoreInfo" onClick={handleShowMoreInfo}>More Info</button>
+            {
+                moreInfo ? <InfoBody /> : null
+            }
         </Fragment>
     );
 }

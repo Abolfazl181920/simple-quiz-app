@@ -8,7 +8,7 @@
     --white: #fff;
     --blue: rgb(103, 59, 226);
     --bluehover: rgb(218, 217, 223);
-    --green: rgb(209, 214, 208);
+    --miniwhite: rgb(209, 214, 208);
 }
 
 /* body of app */
@@ -52,7 +52,7 @@ Button:hover {
 .ShowScore {
     height: 100vh;
     width: 100%;
-    background-color: var(--green);
+    background-color: var(--miniwhite);
 }
 
 /* body of show score */
@@ -96,12 +96,29 @@ Button:hover {
   font-weight: 700;
 }
 
+/* Info.js component */
 .MoreInfo {
     margin-top: 5rem;
     background-color: var(--blue);
     color: var(--white);
+    box-shadow: 0 2.8px 2.2px rgba(94, 75, 112, 0.034),
+    0 6.7px 5.3px rgba(139, 45, 194, 0.048),
+    0 12.5px 10px rgba(120, 41, 167, 0.06),
+    0 22.3px 17.9px rgba(136, 37, 167, 0.072),
+    0 41.8px 33.4px rgba(128, 34, 151, 0.086),
+    0 100px 80px rgba(148, 33, 148, 0.12);
 }
 
 .MoreInfo:hover {
     background-color: var(--blue);
+}
+
+/* InfoBody.js component */
+.InfoBody {
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    border-radius: .2rem;
+    background-color: var(--white);
+    top: 100%;
 }

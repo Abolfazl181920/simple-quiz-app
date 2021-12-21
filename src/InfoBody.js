@@ -4,8 +4,7 @@ const InfoBody = () => {
     return(
         <Fragment>
             <div>
-                <div className="">
-                </div>
+                <div className="InfoBody"></div>
             </div>
         </Fragment>
     );
