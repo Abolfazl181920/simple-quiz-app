@@ -126,10 +126,23 @@ Button:hover {
 
 /* hide info */
 .HideInfo {
-    background-color: var(--blue);
-    width: 5%;
-    border-radius: 50%;
+    background-color: var(--miniwhite);
+    width: 12%;
+    border-radius: 0.2rem;
     font-weight: 700;
     position: absolute;
-    left: 45%;
+    right: 4%;
+    top: 80%;
+    color: var(--blue);
+    box-shadow: 0 2.8px 2.2px rgba(94, 75, 112, 0.034),
+    0 6.7px 5.3px rgba(139, 45, 194, 0.048),
+    0 12.5px 10px rgba(120, 41, 167, 0.06),
+    0 22.3px 17.9px rgba(136, 37, 167, 0.072),
+    0 41.8px 33.4px rgba(128, 34, 151, 0.086),
+    0 100px 80px rgba(148, 33, 148, 0.12);
+}
+
+.HideInfo:hover {
+    background-color: var(--blue);
+    color: var(--miniwhite)
 }

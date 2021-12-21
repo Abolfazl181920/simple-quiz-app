@@ -1,6 +1,13 @@
-import React, {Fragment} from 'react';
+import React, {useState, Fragment} from 'react';
 
 const InfoBody = () => {
+
+    const [hideInfo, setHideInfo] = useState(false);
+
+    const handleHideInfo = () => {
+        setHideInfo(!hideInfo);
+    }
+
     return(
         <Fragment>
             <div>
@@ -9,8 +16,8 @@ const InfoBody = () => {
                     <div>You can't answer to n questions</div>
                     <div>Your percentage is n%</div>
                 </div>
-                <button className="HideInfo">Hide Info</button>
             </div>
+                <button onClick={handleHideInfo} className="HideInfo">Hide Info</button>
         </Fragment>
     );
 }
