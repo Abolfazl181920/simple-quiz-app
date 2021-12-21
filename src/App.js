@@ -58,7 +58,6 @@ const App = () => {
 	const handleOptionClick = (isCorrect) => {
 		if (isCorrect) {
 			setScore(score + 1);
-			alert(score);
 		}
 
 		const nextQuestion = currentQuestion + 1;
@@ -73,12 +72,12 @@ const App = () => {
     <div className="App">
 		{
 			showScore ? <div className="ShowScore">
-				<div className="ShowScoreBody"><p>You answered {score} questions</p></div>
+				<div className="ShowScoreBody"><p>You scored {score} out of {questions.length}</p></div>
 			</div> : (
 				<div className="BodySection">
           			<div className="Question">{questions[0].questionText}</div>
           			<div className="Button">
-            			{questions[0].answerOptions.map((answerOption) => {
+            			{questions[currentQuestion].answerOptions.map((answerOption) => {
               			return <button onClick={() => handleOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
             		})}
           		</div>
