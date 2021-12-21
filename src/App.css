@@ -50,5 +50,7 @@ Button:hover {
 
 /* show score of quiz */
 .ShowScore {
+    height: 100vh;
+    width: 100%;
     background-color: var(--green);
 }
