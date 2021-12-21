@@ -25,13 +25,14 @@ const App = () => {
 	];
 
 	const [showScore, setShowScore] = useState(true);
+	const [score, setScore] = useState(0);
 
 
   return (
     <div className="App">
 		{
 			showScore ? <div className="ShowScore">
-				<div className="ShowScoreBody"></div>
+				<div className="ShowScoreBody"><p>You answered {score} questions</p></div>
 			</div> : (
 				<div className="BodySection">
           			<div className="Question">{questions[0].questionText}</div>
