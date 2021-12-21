@@ -70,6 +70,8 @@ const App = () => {
 
 	const handleResetQuestions = () => {
 		setShowScore(false);
+		setScore(0);
+		setCurrentQuestion(0);
 	}
 
   return (
