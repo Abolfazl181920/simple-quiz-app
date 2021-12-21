@@ -68,11 +68,16 @@ const App = () => {
 		}
 	}
 
+	const handleResetQuestions = () => {
+		setShowScore(false);
+	}
+
   return (
     <div className="App">
 		{
 			showScore ? <div className="ShowScore">
 				<div className="ShowScoreBody"><p>You scored {score} out of {questions.length}</p></div>
+				<button className="BackToQuestions" onClick={() => handleResetQuestions()}>back to questions</button>
 			</div> : (
 				<div className="BodySection">
           			<div className="Question">{questions[0].questionText}</div>
