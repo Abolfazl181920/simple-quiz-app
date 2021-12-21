@@ -9,6 +9,7 @@ const InfoBody = () => {
                     <div>You can't answer to n questions</div>
                     <div>Your percentage is n%</div>
                 </div>
+                <button className="HideInfo">Hide Info</button>
             </div>
         </Fragment>
     );
