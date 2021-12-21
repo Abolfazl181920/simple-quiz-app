@@ -6,7 +6,7 @@ const Info = () => {
     const [moreInfo, showMoreInfo] = useState(true);
 
     const handleShowMoreInfo = () => {
-        alert();
+        showMoreInfo(!moreInfo);
     }
 
     return(
