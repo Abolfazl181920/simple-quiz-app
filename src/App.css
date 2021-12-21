@@ -8,6 +8,7 @@
     --white: #fff;
     --blue: rgb(103, 59, 226);
     --bluehover: rgb(218, 217, 223);
+    --green: rgb(94, 197, 80);
 }
 
 /* body of app */
@@ -45,4 +46,9 @@ Button {
 
 Button:hover {
     background-color: var(--bluehover);
+}
+
+/* show score of quiz */
+.ShowScore {
+    background-color: var(--green);
 }

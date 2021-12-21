@@ -29,15 +29,18 @@ const App = () => {
 
   return (
     <div className="App">
-		{showScore ? <div className="ShowScore"></div> : null}
-        <div className="BodySection">
-          <div className="Question">{questions[0].questionText}</div>
-          <div className="Button">
-            {questions[0].answerOptions.map((answerOption) => {
-              return <button>{answerOption.answerText}</button>
-            })}
-          </div>
-        </div>
+		{
+			showScore ? <div className="ShowScore"></div> : (
+				<div className="BodySection">
+          			<div className="Question">{questions[0].questionText}</div>
+          			<div className="Button">
+            			{questions[0].answerOptions.map((answerOption) => {
+              			return <button>{answerOption.answerText}</button>
+            		})}
+          		</div>
+        	</div>
+			)
+		}
     </div>
   );
 }
