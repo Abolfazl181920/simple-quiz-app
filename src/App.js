@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Info from './Info';
+import InfoBody from './InfoBody';
 
 const App = () => {
 
@@ -80,7 +80,6 @@ const App = () => {
 			showScore ? <div className="ShowScore">
 				<div className="ShowScoreBody"><p>You scored {score} out of {questions.length}</p></div>
 				<button className="BackToQuestions" onClick={() => handleResetQuestions()}>back to questions</button>
-				<Info />
 			</div> : (
 				<div className="BodySection">
           			<div className="Question">{questions[0].questionText}</div>
@@ -92,6 +91,7 @@ const App = () => {
         	</div>
 			)
 		}
+		<InfoBody />
     </div>
   );
 }

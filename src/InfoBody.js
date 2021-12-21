@@ -10,13 +10,13 @@ const InfoBody = () => {
 
     return(
         <Fragment>
-            <div>
+            {hideInfo ? <div>
                 <div className="InfoBody">
                     <div>You answered n questions</div>
                     <div>You can't answer to n questions</div>
                     <div>Your percentage is n%</div>
                 </div>
-            </div>
+            </div> : null}
                 <button onClick={handleHideInfo} className="HideInfo">Hide Info</button>
         </Fragment>
     );
